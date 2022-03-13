@@ -3,7 +3,7 @@
     "name": "name",
     "intialBalance": 456,
     "accNumber": 0,
-    "remainigBalance": 1000,
+    "remainigBalance": 500,
     "operations": [
       {
         "_": ["addOperation"],

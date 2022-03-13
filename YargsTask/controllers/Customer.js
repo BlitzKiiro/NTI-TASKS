@@ -40,6 +40,7 @@ class Customer {
     } else if (operationData.opType === "withdraw") {
       if (users[userIndex].remainigBalance >= operationData.val) {
         users[userIndex].remainigBalance -= operationData.val;
+        users[userIndex].operations.push(operationData);
         JsonHandler.writeData(users);
         console.log(chalk.green("operation successful"));
       } else console.log(chalk.yellow("insufficent balance"));
