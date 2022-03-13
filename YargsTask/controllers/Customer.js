@@ -15,6 +15,7 @@ class Customer {
       data.operations = [];
       users.push[data];
       JsonHandler.writeData(users);
+      console.log(chalk.green("user Added"));
     } catch (e) {
       console.log(chalk.red(e.message));
     }

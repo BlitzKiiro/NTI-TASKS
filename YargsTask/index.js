@@ -40,7 +40,7 @@ yargs.command({
   builder: {
     accNumber: {
       type: Number,
-      required: True,
+      required: true,
     },
     opType: {
       type: String,
@@ -53,6 +53,7 @@ yargs.command({
   },
   handler: (argv) => {
     const operationData = { ...argv, date: Date.now() };
+    Customer.addOperation(operationData);
   },
 });
 
