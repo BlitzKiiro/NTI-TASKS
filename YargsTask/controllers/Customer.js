@@ -10,10 +10,12 @@ class Customer {
     try {
       if (data.name.length < 3) throw new Error("invalid name");
       const users = JsonHandler.readData();
+
       data.accNumber = users.length;
       data.remainigBalance = 0;
       data.operations = [];
-      users.push[data];
+      users.push(data);
+
       JsonHandler.writeData(users);
       console.log(chalk.green("user Added"));
     } catch (e) {
